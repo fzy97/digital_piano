@@ -1,0 +1,98 @@
+NET "inclk" 	LOC = "E3"; # Bank = 2, Signal name = CLK1
+NET"ChannelSelect"LOC=U8;
+NET"YinDiao[2]"LOC=U12;
+NET"YinDiao[1]"LOC=H6;
+NET"YinDiao[0]"LOC=T13;
+NET "ps2_clk" 	LOC= "F4";
+NET "ps2_data" LOC= "B2";
+
+NET "reset" LOC = "V10"; # Bank = 0, Signal name = BTN0
+NET "start" LOC = "U11"; # Bank =  , Signal name = BTN1
+
+NET "select" LOC = "R16"; # Bank =  , Signal name = BTN1
+
+//NET "out_l"  LOC = "D14"; # Bank = 1, Signal name = CG
+NET "out"  LOC = "A11"; # Bank = 1, Signal name = CG
+
+NET "key[3]" LOC = "J15"; # Bank = 3, Signal name = CE
+NET "key[2]" LOC = "L16"; # Bank = 3, Signal name = CF
+NET "key[1]" LOC = "M13"; # Bank = 1, Signal name = CG
+NET "key[0]" LOC = "R15"; # Bank = 1, Signal name = CG
+
+NET "record" LOC = "R17";
+NET "replay" LOC = "T18";
+
+NET "anodes<3>" LOC = "J17"; # Bank =  , Signal name = AN3
+NET "anodes<2>" LOC = "J18"; # Bank =  , Signal name = AN2
+NET "anodes<1>" LOC = "T9"; # Bank =  , Signal name = AN1
+NET "anodes<0>" LOC = "J14"; # Bank =  , Signal name = AN0
+
+NET "cathodes<0>" LOC = "T10"; # Bank =  , Signal name = CA
+NET "cathodes<1>" LOC = "R10"; # Bank =  , Signal name = CB
+NET "cathodes<2>" LOC = "K16"; # Bank =  , Signal name = CC
+NET "cathodes<3>" LOC = "K13"; # Bank =  , Signal name = CD
+NET "cathodes<4>" LOC = "P15"; # Bank =  , Signal name = CE
+NET "cathodes<5>" LOC = "T11"; # Bank =  , Signal name = CF
+NET "cathodes<6>" LOC = "L18"; # Bank =  , Signal name = CG
+
+NET "hsync" 	LOC = B11; 
+NET "vsync" 	LOC = B12; 
+NET "vga_r<2>" LOC = C5;  
+NET "vga_r<1>" LOC = B4; 
+NET "vga_r<0>" LOC = A3; 
+NET "vga_g<2>" LOC = B6; 
+NET "vga_g<1>" LOC = A5; 
+NET "vga_g<0>" LOC = C6; 
+NET "vga_b<1>" LOC = C7; 
+NET "vga_b<0>" LOC = B7;
+
+#NET "select[3]" LOC = "A7"; # Bank = 3, Signal name = CE
+#NET "select[2]" LOC = "M4"; # Bank = 3, Signal name = CF
+#NET "select[1]" LOC = "C11"; # Bank = 1, Signal name = CG
+#NET "select[0]" LOC = "G12"; # Bank = 1, Signal name = CG
+
+NET "select" CLOCK_DEDICATED_ROUTE = FALSE;
+
+
+
+NET"YinDiao[2]"IOSTANDARD=LVCMOS33;
+NET"YinDiao[1]"IOSTANDARD=LVCMOS33;
+NET"YinDiao[0]"IOSTANDARD=LVCMOS33;
+NET"ChannelSelect"IOSTANDARD=LVCMOS33;
+
+NET "inclk" IOSTANDARD=LVCMOS33 | LOC=E3;
+NET "ps2_clk" IOSTANDARD=LVCMOS33 | LOC=F4;
+NET "ps2_data" IOSTANDARD=LVCMOS33 | LOC=B2;
+NET "reset" IOSTANDARD=LVCMOS33 | LOC=V10;
+NET "start" IOSTANDARD=LVCMOS33 | LOC=U11;
+NET "select" IOSTANDARD=LVCMOS33;
+//NET "out_l" IOSTANDARD=LVCMOS33 | LOC=D14;
+NET "out" IOSTANDARD=LVCMOS33 | LOC=A11;
+
+NET "key[3]" IOSTANDARD=LVCMOS33 | LOC=J15;
+NET "key[2]" IOSTANDARD=LVCMOS33 | LOC=L16;
+NET "key[1]" IOSTANDARD=LVCMOS33 | LOC=M13;
+NET "key[0]" IOSTANDARD=LVCMOS33 | LOC=R15;
+NET "record" IOSTANDARD=LVCMOS33 | LOC=R17;
+NET "replay" IOSTANDARD=LVCMOS33 | LOC=T18;
+NET "anodes<3>" IOSTANDARD=LVCMOS33 | LOC=J17;
+NET "anodes<2>" IOSTANDARD=LVCMOS33 | LOC=J18;
+NET "anodes<1>" IOSTANDARD=LVCMOS33 | LOC=T9;
+NET "anodes<0>" IOSTANDARD=LVCMOS33 | LOC=J14;
+NET "cathodes<0>" IOSTANDARD=LVCMOS33 | LOC=T10;
+NET "cathodes<1>" IOSTANDARD=LVCMOS33 | LOC=R10;
+NET "cathodes<2>" IOSTANDARD=LVCMOS33 | LOC=K16;
+NET "cathodes<3>" IOSTANDARD=LVCMOS33 | LOC=K13;
+NET "cathodes<4>" IOSTANDARD=LVCMOS33 | LOC=P15;
+NET "cathodes<5>" IOSTANDARD=LVCMOS33 | LOC=T11;
+NET "cathodes<6>" IOSTANDARD=LVCMOS33 | LOC=L18;
+NET "hsync" IOSTANDARD=LVCMOS33 | LOC=B11;
+NET "vsync" IOSTANDARD=LVCMOS33 | LOC=B12;
+NET "vga_r<2>" IOSTANDARD=LVCMOS33 | LOC=C5;
+NET "vga_r<1>" IOSTANDARD=LVCMOS33 | LOC=B4;
+NET "vga_r<0>" IOSTANDARD=LVCMOS33 | LOC=A3;
+NET "vga_g<2>" IOSTANDARD=LVCMOS33 | LOC=B6;
+NET "vga_g<1>" IOSTANDARD=LVCMOS33 | LOC=A5;
+NET "vga_g<0>" IOSTANDARD=LVCMOS33 | LOC=C6;
+NET "vga_b<1>" IOSTANDARD=LVCMOS33 | LOC=C7;
+NET "vga_b<0>" IOSTANDARD=LVCMOS33 | LOC=B7;
